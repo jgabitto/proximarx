@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
+import Typography from '@mui/material/Typography';
 
 import { NavItem } from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
+
   const {
     landings: landingPages,
     secondary: secondaryPages,
@@ -18,6 +19,11 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
     portfolio: portfolioPages,
     blog: blogPages,
   } = pages;
+
+  const [activeLink, setActiveLink] = useState('');
+  useEffect(() => {
+    setActiveLink(window && window.location ? window.location.pathname : '');
+  }, []);
 
   return (
     <Box
@@ -33,43 +39,86 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         title="theFront"
         width={{ xs: 100, md: 120 }}
       >
-        <Box
-          component={'img'}
-          src={
-            mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
-          height={1}
-          width={1}
-        />
+        <Box component={'img'} src="/proximarxpng.png" height={1} width={1} />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box>
+        {/* <Box>
           <NavItem
             title={'Landings'}
             id={'landing-pages'}
             items={landingPages}
             colorInvert={colorInvert}
           />
+        </Box> */}
+        <Box>
+          <Box
+            display={'flex'}
+            alignItems={'center'}
+            aria-describedby={'home'}
+            sx={{ cursor: 'pointer' }}
+          >
+            <Button component={'a'} href="/" fullWidth>
+              <Typography fontWeight={400} color="text.primary">
+                Home
+              </Typography>
+            </Button>
+          </Box>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
+          <Box
+            display={'flex'}
+            alignItems={'center'}
+            aria-describedby={'about'}
+            sx={{ cursor: 'pointer' }}
+          >
+            <Button component={'a'} href="/about-side-cover" fullWidth>
+              <Typography fontWeight={400} color="text.primary">
+                About
+              </Typography>
+            </Button>
+          </Box>
+          {/* <NavItem
             title={'Company'}
             id={'company-pages'}
             items={companyPages}
             colorInvert={colorInvert}
-          />
+          /> */}
         </Box>
         <Box marginLeft={4}>
-          <NavItem
+          <Box
+            display={'flex'}
+            alignItems={'center'}
+            aria-describedby={'faq'}
+            sx={{ cursor: 'pointer' }}
+          >
+            <Button component={'a'} href="/faq" fullWidth>
+              <Typography fontWeight={400} color="text.primary">
+                FAQ
+              </Typography>
+            </Button>
+          </Box>
+        </Box>
+        <Box marginLeft={4}>
+          <Box
+            display={'flex'}
+            alignItems={'center'}
+            aria-describedby={'contact-us'}
+            sx={{ cursor: 'pointer' }}
+          >
+            <Button component={'a'} href="/contact-sidebar-map" fullWidth>
+              <Typography fontWeight={400} color="text.primary">
+                Contact Us
+              </Typography>
+            </Button>
+          </Box>
+          {/* <NavItem
             title={'Account'}
             id={'account-pages'}
             items={accountPages}
             colorInvert={colorInvert}
-          />
+          /> */}
         </Box>
-        <Box marginLeft={4}>
+        {/* <Box marginLeft={4}>
           <NavItem
             title={'Pages'}
             id={'secondary-pages'}
@@ -92,17 +141,16 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             items={portfolioPages}
             colorInvert={colorInvert}
           />
-        </Box>
+        </Box> */}
         <Box marginLeft={4}>
           <Button
-            variant="contained"
-            color="primary"
+            variant="outlined"
             component="a"
             target="blank"
             href="https://mui.com/store/items/the-front-landing-page/"
             size="large"
           >
-            Buy now
+            En Español
           </Button>
         </Box>
       </Box>

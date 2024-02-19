@@ -18,7 +18,7 @@ const pages = {
     },
     {
       title: 'Marketing',
-      href: '/',
+      href: '/marketing',
     },
     {
       title: 'Service',
@@ -66,7 +66,7 @@ const pages = {
     },
     {
       title: 'Logistics',
-      href: '/logistics',
+      href: '/',
     },
     {
       title: 'E-commerce',

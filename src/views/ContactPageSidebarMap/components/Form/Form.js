@@ -30,10 +30,7 @@ const validationSchema = yup.object({
     .trim()
     .email('Please enter a valid email address')
     .required('Email is required.'),
-  message: yup
-    .string()
-    .trim()
-    .required('Please specify your message'),
+  message: yup.string().trim().required('Please specify your message'),
 });
 
 const Contact = () => {
@@ -212,7 +209,7 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+        src="https://www.google.com/maps/embed?width=100%&height=100%&pb=!1m14!1m8!1m3!1d13856.918569111469!2d-95.3744758!3d29.7420664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf6cf56c389b%3A0x7e0fdb37c8b3874d!2sMemorial%20Wellness%20Pharmacy!5e0!3m2!1sen!2sus!4v1708367457450!5m2!1sen!2sus"
         style={{
           minHeight: 300,
           filter:

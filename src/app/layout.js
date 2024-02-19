@@ -37,10 +37,7 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
         />
-        <meta
-          property="og:title"
-          content="theFront | UI Kit by Maccarian Agency."
-        />
+        <meta property="og:title" content="ProximaRX | Compound Pharmacy" />
         <meta
           property="og:description"
           content="A modern design system for your new landing and web pages."
@@ -56,11 +53,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Page>
-          {children}
-        </Page>
+        <Page>{children}</Page>
       </body>
     </html>
   );
 }
-  

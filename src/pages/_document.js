@@ -29,10 +29,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
           />
-          <meta
-            property="og:title"
-            content="theFront | UI Kit by Maccarian Agency."
-          />
+          <meta property="og:title" content="ProximaRX | Compound Pharmacy" />
           <meta
             property="og:description"
             content="A modern design system for your new landing and web pages."

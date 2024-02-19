@@ -7,12 +7,12 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 const Footer = () => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+  // const theme = useTheme();
+  // const { mode } = theme.palette;
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}>
         <Box
           display={'flex'}
           justifyContent={'space-between'}
@@ -76,7 +76,7 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
-      </Grid>
+      </Grid> */}
       <Grid item xs={12}>
         <Typography
           align={'center'}
@@ -84,7 +84,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; 2022-2024 ProximaRX. All rights reserved
         </Typography>
         <Typography
           align={'center'}

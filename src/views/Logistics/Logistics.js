@@ -56,36 +56,36 @@ const Logistics = () => {
       <Container>
         <Features />
       </Container>
-      <Box bgcolor={'alternate.main'}>
+      {/* <Box bgcolor={'alternate.main'}>
         <Container>
           <News />
         </Container>
-      </Box>
-      <Container>
+      </Box> */}
+      {/* <Container>
         <Team />
       </Container>
-      <Video />
-      <Box bgcolor={'#11092d'}>
+      <Video /> */}
+      {/* <Box bgcolor={'#11092d'}>
         <Container>
           <Integrations />
         </Container>
-      </Box>
-      <Container>
+      </Box> */}
+      {/* <Container>
         <Pricings />
-      </Container>
-      <Box bgcolor={'alternate.main'}>
+      </Container> */}
+      {/* <Box bgcolor={'alternate.main'}>
         <Container>
           <Jobs />
         </Container>
-      </Box>
-      <Container>
+      </Box> */}
+      {/* <Container>
         <AboutBottom />
-      </Container>
-      <Box bgcolor={'primary.main'}>
+      </Container> */}
+      {/* <Box bgcolor={'primary.main'}>
         <Container>
           <Reviews />
         </Container>
-      </Box>
+      </Box> */}
     </Main>
   );
 };
