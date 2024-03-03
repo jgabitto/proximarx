@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { About, Features, Hero, Trucking } from './components';
+import { Hero, Trucking } from './components';
 
 const Logistics = () => {
   const theme = useTheme();

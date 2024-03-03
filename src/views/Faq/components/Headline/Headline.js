@@ -9,7 +9,7 @@ const Headline = () => {
         What We Offer
       </Typography>
       <Typography variant="h6" align={'center'} color={'textSecondary'}>
-        Here's how we can help you on your journey to restoring your health.
+        Here is how we can help you on your journey to restoring your health.
       </Typography>
     </Box>
   );
