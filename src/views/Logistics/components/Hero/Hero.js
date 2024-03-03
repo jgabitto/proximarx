@@ -18,7 +18,7 @@ const Hero = () => {
     <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
       <Box marginBottom={2}>
         <Typography variant="h2" color="text.primary" sx={{ fontWeight: 700 }}>
-          We make trucking{' '}
+          Your prescription for health{' '}
         </Typography>
         <Typography
           color={'primary'}
@@ -32,13 +32,12 @@ const Hero = () => {
             )} 0%)`,
           }}
         >
-          efficient
+          begins with us
         </Typography>
       </Box>
       <Box marginBottom={3}>
         <Typography variant="h6" component="p" color="text.secondary">
-          Forward thinking businesses use our cloud backup service to ensure
-          data reliability and safety.
+          Restoring health one prescription at a time.
         </Typography>
       </Box>
       <Button variant="contained" color="primary" size="large">

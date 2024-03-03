@@ -77,7 +77,7 @@ const Topbar = ({ onSidebarOpen }) => {
           >
             <Button component={'a'} href="/faq" fullWidth>
               <Typography fontWeight={400} color="text.primary">
-                FAQ
+                Services
               </Typography>
             </Button>
           </Box>

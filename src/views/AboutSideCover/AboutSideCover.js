@@ -23,12 +23,6 @@ const AboutSideCover = () => {
           <Divider />
         </Container>
         <Container>
-          <Story />
-        </Container>
-        <Container maxWidth={'800px !important'}>
-          <Divider />
-        </Container>
-        <Container>
           <Team />
         </Container>
       </Box>

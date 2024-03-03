@@ -39,40 +39,6 @@ const Logistics = () => {
       <Container>
         <Trucking />
       </Container>
-      <About />
-      <Container>
-        <Features />
-      </Container>
-      {/* <Box bgcolor={'alternate.main'}>
-        <Container>
-          <News />
-        </Container>
-      </Box> */}
-      {/* <Container>
-        <Team />
-      </Container>
-      <Video /> */}
-      {/* <Box bgcolor={'#11092d'}>
-        <Container>
-          <Integrations />
-        </Container>
-      </Box> */}
-      {/* <Container>
-        <Pricings />
-      </Container> */}
-      {/* <Box bgcolor={'alternate.main'}>
-        <Container>
-          <Jobs />
-        </Container>
-      </Box> */}
-      {/* <Container>
-        <AboutBottom />
-      </Container> */}
-      {/* <Box bgcolor={'primary.main'}>
-        <Container>
-          <Reviews />
-        </Container>
-      </Box> */}
     </Main>
   );
 };

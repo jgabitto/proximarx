@@ -9,9 +9,9 @@ import CardContent from '@mui/material/CardContent';
 
 const mock = [
   {
-    title: 'Complete your application',
+    title: 'Reliability',
     subtitle:
-      'Fill out our standardized application on our platform. Most applicants finish in under an hour.',
+      'Whether it be filling a routine prescription or offering guidance and support, independent pharmacies put in the time and effort to be present for their patients. Compared to chain pharmacies, independents are less likely to make miscalculations, mix up prescriptions, or wrongly file patient information. Patients can be assured that they have access to closely monitored, thoroughly reviewed care.',
     icon: (
       <svg
         height={24}
@@ -33,7 +33,7 @@ const mock = [
   {
     title: 'Select companies',
     subtitle:
-      'We\'ll immediately match you with any relevant openings and you get to pick which ones you\'re interested in.',
+      "We'll immediately match you with any relevant openings and you get to pick which ones you're interested in.",
     icon: (
       <svg
         height={24}

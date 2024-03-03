@@ -61,9 +61,9 @@ const Contact = () => {
             Contact us
           </Typography>
           <Typography color="text.secondary">
-            Rather than worrying about switching offices every couple years, you
-            can instead stay in the same location and grow-up from your shared
-            coworking space to an office that takes up an entire floor.
+            If you're interested in one of our services or have a question,
+            please submit the form below and we will get back to you in 1-2
+            business days.
           </Typography>
         </Box>
         <Box>

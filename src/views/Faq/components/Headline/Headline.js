@@ -5,22 +5,11 @@ import Typography from '@mui/material/Typography';
 const Headline = () => {
   return (
     <Box>
-      <Typography
-        sx={{
-          textTransform: 'uppercase',
-          fontWeight: 'medium',
-        }}
-        gutterBottom
-        color={'textSecondary'}
-        align={'center'}
-      >
-        F.A.Q.
-      </Typography>
       <Typography variant="h2" align={'center'} fontWeight={700} gutterBottom>
-        Have a question?
+        What We Offer
       </Typography>
       <Typography variant="h6" align={'center'} color={'textSecondary'}>
-        Search our FAQ for answers to anything you might ask.
+        Here's how we can help you on your journey to restoring your health.
       </Typography>
     </Box>
   );

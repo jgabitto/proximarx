@@ -42,12 +42,13 @@ const Headline = () => {
           align={'center'}
           gutterBottom
         >
-          We take you by hand on each step of the process
+          ProximaRX is dedicated to providing outstanding service to all
+          patients.
         </Typography>
         <Typography variant="h6" color={'text.secondary'} align={'center'}>
-          As experts in both design & development, we help you go through the
-          complete process. From your new website idea, to design, development,
-          launch and scale!
+          We collaborate with your legal, medical, and insurance providers to
+          take the financial burden out of the prescription process and have a
+          greater impact on our patients and the local community.
         </Typography>
       </Box>
     </Box>
