@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 const mock = [
   {
     label: 'Phone',
-    value: '+39 659-657-0133',
+    value: ' (713) 523-7847',
     icon: (
       <svg
         width={20}
@@ -26,7 +26,7 @@ const mock = [
   },
   {
     label: 'Email',
-    value: 'hi@maccarianagency.com',
+    value: 'info@proximarx.com',
     icon: (
       <svg
         width={20}
@@ -42,7 +42,7 @@ const mock = [
   },
   {
     label: 'Address',
-    value: 'Via Venini 33, 20147',
+    value: '2918 San Jacinto St., #100 Houston, TX 77004',
     icon: (
       <svg
         width={20}
