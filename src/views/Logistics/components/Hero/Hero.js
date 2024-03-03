@@ -40,7 +40,12 @@ const Hero = () => {
           Restoring health one prescription at a time.
         </Typography>
       </Box>
-      <Button variant="contained" color="primary" size="large">
+      <Button
+        variant="contained"
+        color="primary"
+        size="large"
+        href="/contact-sidebar-map"
+      >
         Get started
       </Button>
     </Box>
