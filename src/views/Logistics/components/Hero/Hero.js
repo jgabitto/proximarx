@@ -64,7 +64,7 @@ const Hero = () => {
         <Box
           component={'img'}
           loading="lazy"
-          src={'https://assets.maccarianagency.com/backgrounds/img50.jpg'}
+          src={'./pharmacists.jpg'}
           height={{ xs: 'auto', md: 1 }}
           maxHeight={{ xs: 300, md: 1 }}
           width={1}

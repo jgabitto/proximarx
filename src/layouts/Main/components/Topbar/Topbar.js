@@ -49,7 +49,7 @@ const Topbar = ({ onSidebarOpen }) => {
           </Box>
         </Box>
         <Box marginLeft={4}>
-          <Box
+          {/* <Box
             display={'flex'}
             alignItems={'center'}
             aria-describedby={'about'}
@@ -60,7 +60,7 @@ const Topbar = ({ onSidebarOpen }) => {
                 About
               </Typography>
             </Button>
-          </Box>
+          </Box> */}
           {/* <NavItem
             title={'Company'}
             id={'company-pages'}
@@ -126,7 +126,7 @@ const Topbar = ({ onSidebarOpen }) => {
             colorInvert={colorInvert}
           />
         </Box> */}
-        <Box marginLeft={4}>
+        {/* <Box marginLeft={4}>
           <Button
             variant="outlined"
             component="a"
@@ -136,7 +136,7 @@ const Topbar = ({ onSidebarOpen }) => {
           >
             En Español
           </Button>
-        </Box>
+        </Box> */}
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

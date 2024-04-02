@@ -13,8 +13,6 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
-import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
-
 const mock = [
   {
     title: 'Reliability',
@@ -139,21 +137,10 @@ const Trucking = () => {
               height={'auto'}
               sx={{ verticalAlign: 'middle' }}
             >
-              <LaptopSkeletonIllustration />
-            </Box>
-            <Box
-              position={'absolute'}
-              top={'8.4%'}
-              left={'12%'}
-              width={'76%'}
-              height={'83%'}
-              border={`1px solid ${theme.palette.alternate.dark}`}
-              zIndex={3}
-            >
               <Box
                 component={'img'}
                 loading="lazy"
-                src="https://assets.maccarianagency.com/screenshots/dashboard.png"
+                src="./independent_pharmacist.jpg"
                 alt="Image Description"
                 width={1}
                 height={1}
