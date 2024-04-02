@@ -27,7 +27,7 @@ const SidebarNav = () => {
           </Button>
         </Box>
       </Box>
-      <Box paddingX={2} paddingY={1}>
+      {/* <Box paddingX={2} paddingY={1}>
         <Box aria-describedby={'about'} sx={{ cursor: 'pointer' }}>
           <Button component={'a'} href="/about-side-cover" fullWidth>
             <Typography fontWeight={400} color="text.primary">
@@ -35,12 +35,12 @@ const SidebarNav = () => {
             </Typography>
           </Button>
         </Box>
-      </Box>
+      </Box> */}
       <Box paddingX={2} paddingY={1}>
         <Box aria-describedby={'faq'} sx={{ cursor: 'pointer' }}>
           <Button component={'a'} href="/faq" fullWidth>
             <Typography fontWeight={400} color="text.primary">
-              FAQ
+              Services
             </Typography>
           </Button>
         </Box>
@@ -54,7 +54,7 @@ const SidebarNav = () => {
           </Button>
         </Box>
       </Box>
-      <Box marginTop={2}>
+      {/* <Box marginTop={2}>
         <Button
           size={'large'}
           variant="outlined"
@@ -65,7 +65,7 @@ const SidebarNav = () => {
         >
           En Español
         </Button>
-      </Box>
+      </Box> */}
       {/* <Box paddingX={2} paddingY={2}>
         <Box>
           <NavItem title={'Landings'} items={landingPages} />
