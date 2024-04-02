@@ -18,33 +18,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <link
-          rel="shortcut icon"
-          href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
-        />
+        <link rel="shortcut icon" href="./favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
-        <meta
-          name="description"
-          content="A modern design system for your new landing and web pages."
-        />
+        <meta name="description" content="ProximaRX | Compound Pharmacy" />
         <meta
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
-        />
         <meta property="og:title" content="ProximaRX | Compound Pharmacy" />
         <meta
           property="og:description"
-          content="A modern design system for your new landing and web pages."
-        />
-        <meta
-          property="og:url"
-          content="https://thefront.maccarianagency.com/"
+          content="ProximaRX | Compound Pharmacy"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
