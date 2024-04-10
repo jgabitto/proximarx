@@ -39,6 +39,7 @@ export default async function handler(req, res) {
     };
 
     try {
+      console.log('process.env.SENDGRID_API_KEY', process.env.SENDGRID_API_KEY);
       await sgMail.send(msg);
       res.status(200).json({ success: true });
     } catch (error) {
