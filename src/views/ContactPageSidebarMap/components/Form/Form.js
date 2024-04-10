@@ -8,7 +8,9 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import axios from 'axios';
 import { useTheme } from '@mui/material/styles';
+import { PropTypes } from 'prop-types';
 
 import Container from 'components/Container';
 
@@ -30,10 +32,14 @@ const validationSchema = yup.object({
     .trim()
     .email('Please enter a valid email address')
     .required('Email is required.'),
+  phone: yup
+    .string()
+    .matches(/^\d{10}$/, 'Phone number must be exactly 10 digits')
+    .required('Phone number is required'),
   message: yup.string().trim().required('Please specify your message'),
 });
 
-const Contact = () => {
+const Contact = ({ handleEmailSent }) => {
   const theme = useTheme();
 
   const LeftSide = () => {
@@ -41,11 +47,18 @@ const Contact = () => {
       firstName: '',
       lastName: '',
       email: '',
+      phone: '',
       message: '',
     };
 
-    const onSubmit = (values) => {
-      return values;
+    const onSubmit = async (values) => {
+      try {
+        await axios.post('/api/sendGrid', values);
+        handleEmailSent('success', 'Email sent successfully!');
+        return values;
+      } catch (e) {
+        handleEmailSent('error', 'Email did not send');
+      }
     };
 
     const formik = useFormik({
@@ -119,6 +132,22 @@ const Contact = () => {
                   onChange={formik.handleChange}
                   error={formik.touched.email && Boolean(formik.errors.email)}
                   helperText={formik.touched.email && formik.errors.email}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  sx={{ height: 54 }}
+                  label="Phone Number"
+                  type="tel"
+                  variant="outlined"
+                  color="primary"
+                  size="medium"
+                  name="phone"
+                  fullWidth
+                  value={formik.values.phone}
+                  onChange={formik.handleChange}
+                  error={formik.touched.phone && Boolean(formik.errors.phone)}
+                  helperText={formik.touched.phone && formik.errors.phone}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -287,6 +316,10 @@ const Contact = () => {
       <Divider />
     </Box>
   );
+};
+
+Contact.propTypes = {
+  handleEmailSent: PropTypes.func.isRequired,
 };
 
 export default Contact;

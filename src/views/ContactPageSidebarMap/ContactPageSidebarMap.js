@@ -1,17 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+
+import CustomSnackbar from 'components/Snackbar';
 import { Form, Contact } from './components';
 
 const ContactPageSidebarMap = () => {
   const theme = useTheme();
 
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  // eslint-disable-next-line no-unused-vars
+  const [alertType, setAlertType] = useState('success');
+  // eslint-disable-next-line no-unused-vars
+  const [emailMessage, setEmailMessage] = useState('Email sent successfully!');
+
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpenSnackbar(false);
+  };
+
+  const handleEmailSent = (type, msg) => {
+    setOpenSnackbar(true);
+    setAlertType(type);
+    setEmailMessage(msg);
+  };
+
   return (
     <Main>
-      <Form />
+      <Form handleEmailSent={handleEmailSent} />
       <Box position={'relative'} bgcolor={'alternate.main'}>
         <Container>
           <Contact />
@@ -34,6 +56,12 @@ const ContactPageSidebarMap = () => {
           ></path>
         </Box>
       </Box>
+      <CustomSnackbar
+        open={openSnackbar}
+        handleClose={handleSnackbarClose}
+        message={emailMessage}
+        type={alertType}
+      />
     </Main>
   );
 };

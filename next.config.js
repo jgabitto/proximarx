@@ -3,9 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  serverRuntimeConfig: {
-    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
-  },
+  serverRuntimeConfig: {},
 };
 
 module.exports = nextConfig;
