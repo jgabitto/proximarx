@@ -32,14 +32,13 @@ export default async function handler(req, res) {
   `;
 
     const msg = {
-      to: email,
+      to: 'info@proximarx.com',
       from: email,
       subject: `Message from ${firstName} ${lastName}`,
       html: htmlContent,
     };
 
     try {
-      console.log('process.env.SENDGRID_API_KEY', process.env.SENDGRID_API_KEY);
       await sgMail.send(msg);
       res.status(200).json({ success: true });
     } catch (error) {
