@@ -2,6 +2,7 @@
 
 /* eslint-disable react/display-name */
 import React from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 // import Document, { Html, Head, Main, NextScript } from 'next/document';
 // import createCache from '@emotion/cache';
 // import createEmotionServer from '@emotion/server/create-instance';
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
           rel="stylesheet"
         />
+        <GoogleAnalytics gaId="G-0EMZRVZ7LZ" />
       </head>
       <body>
         <Page>{children}</Page>
