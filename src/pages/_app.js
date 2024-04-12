@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import Page from '../components/Page';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Page>
         <Component {...pageProps} />
+        <GoogleAnalytics gaId="G-0EMZRVZ7LZ" />
       </Page>
     </React.Fragment>
   );
