@@ -17,7 +17,10 @@ export default function App({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>ProximaRX | Compound Pharmacy.</title>
+        <title>
+          #1 Pharmacy for Workers&apos; Compensation & Personal Injury | Your
+          Prescription for Health Begins With Us
+        </title>
       </Head>
       <Page>
         <Component {...pageProps} />
