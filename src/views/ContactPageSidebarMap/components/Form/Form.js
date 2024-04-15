@@ -238,7 +238,7 @@ const Contact = ({ handleEmailSent }) => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://www.google.com/maps/embed?width=100%&height=100%&pb=!1m14!1m8!1m3!1d13856.918569111469!2d-95.3744758!3d29.7420664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf6cf56c389b%3A0x7e0fdb37c8b3874d!2sMemorial%20Wellness%20Pharmacy!5e0!3m2!1sen!2sus!4v1708367457450!5m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13856.919329121114!2d-95.3744486!3d29.7420609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf64ea27af61%3A0xcd286c96158484!2sProximaRX!5e0!3m2!1sen!2sus!4v1713191273862!5m2!1sen!2sus"
         style={{
           minHeight: 300,
           filter:
